@@ -19,10 +19,10 @@ Backend para implementação de aplicações utilizando a tecnologia de WebSocke
 
 ## 📝 Futuras implementações
 
-[] Testes unitários
-[] Refatoração do código (Desgin Pattern)
+- Testes unitários
+- Refatoração do código (Desgin Pattern)
 
-# Informações
+## Informações de estudo
 
 - REST (Representational State Transfer)
 
