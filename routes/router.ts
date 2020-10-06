@@ -1,6 +1,6 @@
 import { Request, Response, Router } from "express";
 
-export const router = Router();
+export const router = Router(); // Router é responsável por manipular as rotas no express
 
 router.get("/mensagem", (req: Request, res: Response) => {
   res.json({

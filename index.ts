@@ -1,10 +1,11 @@
 import { router } from "./routes/router";
-
 import Server from "./classes/server";
+
 import bodyParser from "body-parser";
 import cors from "cors";
+import socketIO from "socket.io";
 
-const server = new Server();
+const server = Server.instance;
 
 // Configurações do servidor
 server.app.use(bodyParser.urlencoded({ extended: true }));

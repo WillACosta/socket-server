@@ -2,20 +2,25 @@
 
 Backend para implementação de aplicações utilizando a tecnologia de WebSockets.
 
-# Construído com
+## ⛏️ Construído com
 
-- Node.js
-- Express
-- Typescript
--
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Express](https://expressjs.com/) - Server Framework
+- [Socket.io](https://socket.io/) - Realtime Framework
+- [Typescript](https://www.typescriptlang.org/) - Language
 
-# Execução
+## 🏁 Execução
 
 - Instale as dependências com `npm install`
 - Gere os arquivo de distribuição typescript com `tsc -w`
-- Executar servidor `nodemon dist` ou `node dist`
+- Execute o servidor com `nodemon dist/` ou `node dist/`
 
-- Caso não tenha o nodemon instalado de forma global, configra aqui [https://www.npmjs.com/package/nodemon](Nodemon)
+- Caso não tenha o nodemon instalado de forma global, confira [aqui](https://www.npmjs.com/package/nodemon)
+
+## 📝 Futuras implementações
+
+[] Testes unitários
+[] Refatoração do código (Desgin Pattern)
 
 # Informações
 
@@ -27,8 +32,6 @@ Backend para implementação de aplicações utilizando a tecnologia de WebSocke
 
   O servidor emite uma mensagem para todos os clientes conectados ao endpoit, para que atualizem suas informações.
 
-## Conceitos
-
 - Socket.io
 
   Biblioteca de implementação dos Sockets
@@ -36,12 +39,3 @@ Backend para implementação de aplicações utilizando a tecnologia de WebSocke
 - Broadcast
 
   Enviar mensagens para todos os clientes conectados, exceto o cliente que fez a emissão do evento.
-
-## Comandos
-
-- `tsc --init` Cria arquivo de configuração do typescript
-- `tsc -w` Ouvir alterações dos arquivos e fazer a transpilação
-
-- Router é responsável por manipular as rotas no express
-
-- Instalar o pacote cors via NPM.
