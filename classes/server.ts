@@ -40,6 +40,10 @@ export default class Server {
     this.io.on("connection", (client) => {
       console.log("Cliente Conectado!");
 
+      // On message
+      socket.messageListener(client, this.io);
+
+      //On disconnect
       socket.disconnect(client);
     });
   }
