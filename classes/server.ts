@@ -38,7 +38,12 @@ export default class Server {
     console.log("Ouvindo as conexões...");
 
     this.io.on("connection", (client) => {
-      console.log("Cliente Conectado!");
+      console.log("clientId", client.id);
+
+      socket.connectClient(client);
+
+      // Set User
+      socket.setUser(client, this.io);
 
       // On message
       socket.messageListener(client, this.io);

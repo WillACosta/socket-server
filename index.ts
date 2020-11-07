@@ -3,7 +3,6 @@ import Server from "./classes/server";
 
 import bodyParser from "body-parser";
 import cors from "cors";
-import socketIO from "socket.io";
 
 const server = Server.instance;
 
