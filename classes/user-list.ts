@@ -19,7 +19,7 @@ export class UserList {
   }
 
   public getAll() {
-    return this.list;
+    return this.list.filter((user) => user.userName !== "no-name");
   }
 
   public getOne(id: string) {
